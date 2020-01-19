@@ -1,0 +1,154 @@
+/* Imports */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #555555;
+}
+
+a.btn {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FD9DE0;
+    opacity: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto 0px;
+    animation: 1s fadeIn 0.2s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    height: 50px;
+    background-color: #FD9DE0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#leftNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rightNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    margin-right: 15px;
+}
+
+.checkOut {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    font-family: sans-serif;
+    transition: all 0.2s ease-in;
+}
+
+a:hover {
+    color: #c9485b;
+}
+
+
+/* hero styles */
+
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero .backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #FD9DE0;
+}
+
+.hero h1 {
+    font: bold 40px sans-serif;
+    margin-bottom: 5px;
+    color: #3a3535;
+}
+
+.hero h3 {
+    font: normal 20px sans-serif;
+    margin-bottom: 30px;
+    color: #3a3535;
+}
+
+.hero a.btn {
+    padding: 10px 15px;
+}
+
+.heroContentArea {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slideUp 0.2s forwards;
+}
+
+@keyframes slideUp {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
+/* Image Gallery Styles */
+
+.imageGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.item * {
+    display: relative;
+    float: left;
+    overflow: hidden;
+    margin: 5px 1%;
+    min-width: 220px;
+    max-width: 33vw;
+    background: #000000;
+} 
