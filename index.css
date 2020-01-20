@@ -1,154 +1,235 @@
-/* Imports */
-
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-
-/* General Styles */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font: normal 16px sans-serif;
-    color: #555555;
-}
-
-a.btn {
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    background-color: #FD9DE0;
-    opacity: 1;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: auto 0px;
-    animation: 1s fadeIn 0.2s forwards;
-    opacity: 0;
-}
-
-@keyframes fadeIn {
-    100% {
-        opacity: 1;
-    }
-}
-
-header {
-    display: flex;
-    height: 50px;
-    background-color: #FD9DE0;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#leftNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#rightNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.search {
-    margin-right: 15px;
-}
-
-.checkOut {
-    color: black;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    margin-right: 15px;
-    font-family: sans-serif;
-    transition: all 0.2s ease-in;
-}
-
-a:hover {
-    color: #c9485b;
-}
-
-
-/* hero styles */
-
-.hero {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
-.hero .backgroundImg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-    background-color: #FD9DE0;
-}
-
-.hero h1 {
-    font: bold 40px sans-serif;
-    margin-bottom: 5px;
-    color: #3a3535;
-}
-
-.hero h3 {
-    font: normal 20px sans-serif;
-    margin-bottom: 30px;
-    color: #3a3535;
-}
-
-.hero a.btn {
-    padding: 10px 15px;
-}
-
-.heroContentArea {
-    opacity: 0;
-    margin-top: 100px;
-    animation: 1s slideUp 0.2s forwards;
-}
-
-@keyframes slideUp {
-    100% {
-        opacity: 1;
-        margin: 0;
-    }
-}
-
-
-/* Image Gallery Styles */
-
-.imageGallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-div.item * {
-    display: relative;
-    float: left;
-    overflow: hidden;
-    margin: 5px 1%;
-    min-width: 220px;
-    max-width: 33vw;
-    background: #000000;
-} 
+        /* Imports */
+        
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+        /* General Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font: normal 16px sans-serif;
+            color: #555555;
+        }
+        
+        a.btn {
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            background-color: #FD9DE0;
+            opacity: 1;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: auto 0px;
+            animation: 1s fadeIn 0.2s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        header {
+            display: flex;
+            height: 50px;
+            background-color: #FD9DE0;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #leftNav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #rightNav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .search {
+            margin-right: 15px;
+        }
+        
+        .checkOut {
+            color: black;
+        }
+        
+        #leftNav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            font-family: sans-serif;
+            transition: all 0.2s ease-in;
+        }
+        
+        #leftNav a:hover {
+            color: #c9485b;
+        }
+        /* hero styles */
+        
+        .hero {
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+        
+        .hero .backgroundImg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            z-index: -1;
+            background-color: #FD9DE0;
+        }
+        
+        .hero h1 {
+            font: bold 40px sans-serif;
+            margin-bottom: 5px;
+            color: #3a3535;
+        }
+        
+        .hero h3 {
+            font: normal 20px sans-serif;
+            margin-bottom: 30px;
+            color: #3a3535;
+        }
+        
+        .hero a.btn {
+            padding: 10px 15px;
+        }
+        
+        .heroContentArea {
+            opacity: 0;
+            margin-top: 100px;
+            animation: 1s slideUp 0.2s forwards;
+        }
+        
+        @keyframes slideUp {
+            100% {
+                opacity: 1;
+                margin: 0;
+            }
+        }
+        /* Image Gallery Styles */
+        
+        .imageGallery {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .imageGallery div.item {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            margin: 10px 0;
+            min-width: 33vw;
+            max-width: 33vw;
+            width: 100%;
+            background: #000000;
+            text-align: center;
+            border-radius: 25px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+        
+        .imageGallery div.item * {
+            box-sizing: border-box;
+        }
+        
+        .imageGallery div.item img {
+            width: 33vw;
+            vertical-align: top;
+            height: 300px;
+        }
+        
+        .imageGallery div.item i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            font-size: 35px;
+            color: #000000;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background: rgba(255, 255, 255, 0.5);
+            ;
+        }
+        
+        .imageGallery div.item h4 {
+            position: absolute;
+            top: 68%;
+            left: 50%;
+            color: #000000;
+        }
+        
+        .imageGallery div.item.blue {
+            background-color: #34495e;
+        }
+        
+        .imageGallery div.item.blue i {
+            color: #34495e;
+        }
+        
+        .imageGallery div.item.red {
+            background-color: #e74c3c;
+        }
+        
+        .imageGallery div.item.red i {
+            color: #e74c3c;
+        }
+        
+        .imageGallery div.item.green {
+            background-color: #16a085;
+        }
+        
+        .imageGallery div.item.green i {
+            color: #16a085;
+        }
+        
+        .imageGallery div.item:hover img {
+            opacity: 0.3;
+            overflow: hidden;
+            filter: grayscale(100%);
+        }
+        
+        .imageGallery div.item * {
+            transition: all 0.2s ease-in-out;
+            border-radius: 25px;
+        }
+        
+        .imageGallery div.item i {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .imageGallery div.item h4 {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .imageGallery div.item:hover i {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
+        
+        .imageGallery div.item:hover h4 {
+            transform: translate(-50%, -50%) scale(1.3);
+        }
